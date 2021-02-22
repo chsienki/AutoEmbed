@@ -1,0 +1,16 @@
+﻿<Project>
+
+	<ItemGroup>
+		<!-- Allow reading metadata from the items-->
+		<CompilerVisibleItemMetadata Include="AdditionalFiles" MetadataName="IsAutoEmbed" />
+		<CompilerVisibleItemMetadata Include="EmbeddedResource" MetadataName="ManifestResourceName" />
+		<CompilerVisibleItemMetadata Include="EmbeddedResource" MetadataName="OriginalItemSpec" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- Add the embed refs to the additional files + emebedded resources -->
+		<AdditionalFiles Include="@(AutoEmbed)" IsAutoEmbed="true" />
+		<EmbeddedResource Include="@(AutoEmbed)" />
+	</ItemGroup>
+
+</Project>

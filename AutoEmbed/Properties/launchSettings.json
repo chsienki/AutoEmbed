@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AutoEmbed": {
+      "commandName": "DebugRoslynComponent",
+      "targetProject": "C:\\projects\\AutoEmbed\\Tester\\Tester.csproj"
+    }
+  }
+}
